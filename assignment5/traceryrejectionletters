@@ -1,0 +1,20 @@
+{
+    "origin":["[notMyPlace:#company#][myName:#name#]#line#"],
+    
+    "line":["<h1>#notMyPlace# Follow-Up for #myName#</h1>From: noreply @ #notMyPlace# .com<br><br>Hi #myName#, <br><br>
+    Thank you for your interest in joining #notMyPlace.capitalize#! We reviewed your application for our #role# role, but at this time #bad news#.<br><br>
+    The good news is that #good news#. We hope you’ll apply again if something piques your interest.
+    <br><br>
+    #platitude#
+    <br><br>
+    Best,<br>
+    #notMyPlace.capitalize#<br><br>"],
+    
+    "name":["Anna", "An","Annie","Ann","Annna","A","Annabelle"],
+    
+    "company":["Warby Parker", "McDonald's", "Panda Express", "Chipotle", "The New York Times"],
+    "role": ["Staff Engineer","Contract Developer","Wood Worker","Vibe Curation","Code Unicorn","Engineering Ninja","Diversity hire", "Intern"],
+    "bad news":["the entire campus caught on fire", "we will not be moving you forward in the interview process", "we went bankrupt", "we have decided to move forward with other candidates"],
+    "good news":["positions are popping up all the time", "we rescued all the babies", "the fires have died down now", "we went bankrupt"],
+    "platitude":["Good luck in your job search!","Stay away from fires!"]
+    }
