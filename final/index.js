@@ -27,14 +27,26 @@ window.addEventListener("load", () => {
   // discover ice
   function writeSentence() {
     let sentence = "";
-    sentence += times[getRandomInt(0,times.length)];
-    sentence += " as ";
-    sentence += people[getRandomInt(0,people.length)];
-    sentence += " ";
-    sentence += verbs[getRandomInt(0,verbs.length)];
-    sentence += " the ";
-    sentence += nouns[getRandomInt(0,nouns.length)];
-    sentence += ", ";
+    if (Math.random() > 0.2) {
+      sentence += locations[getRandomInt(0,locations.length)];
+      sentence += " is ";
+      sentence += adjs[getRandomInt(0,adjs.length)];
+      sentence += ", like the ";
+      sentence += nouns[getRandomInt(0,nouns.length)];
+      sentence += ". ";
+    }
+    else if (Math.random() > 0.5) {
+      sentence += times[getRandomInt(0,times.length)];
+      sentence += " as ";
+      sentence += people[getRandomInt(0,people.length)];
+      sentence += " ";
+      sentence += advs[getRandomInt(0,advs.length)];
+      sentence += " ";
+      sentence += verbs[getRandomInt(0,verbs.length)];
+      sentence += " the ";
+      sentence += nouns[getRandomInt(0,nouns.length)];
+      sentence += ", ";
+    }
     sentence += people[getRandomInt(0,people.length)];
     sentence += " ";
     sentence += verbs[getRandomInt(0,verbs.length)];
@@ -64,10 +76,10 @@ window.addEventListener("load", () => {
     container.appendChild(a);
   }
 
-  for (let i = 0; i < getRandomInt(1,6); i++) {
+  for (let i = 0; i < getRandomInt(1,3); i++) {
     makeP(writeSentence());
   }
-  for (let i = 0; i < getRandomInt(1,6); i++) {
+  for (let i = 0; i < getRandomInt(1,3); i++) {
     makeA(writeSentence());
   }
 
