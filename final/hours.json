@@ -1,0 +1,80 @@
+{
+  "one": [
+      "one noon",
+      "one minute",
+      "one o’clock in",
+      "one afternoon",
+      "one",
+      "early one morning",
+      "one night",
+      "one morning úrsula",
+      "one",
+      "one morning"
+  ],
+  "two": [
+      "two tremendous hours",
+      "only two seconds",
+      "two o’clock in",
+      "the last two hours",
+      "every two hours",
+      "two hours",
+      "two in the afternoon",
+      "two nights",
+      "the nearly two minutes",
+      "more than two hours",
+      "two o’clock"
+  ],
+  "nine": [
+      "nine nights",
+      "nine in the evening"
+  ],
+  "four": [
+      "four in the afternoon",
+      "four",
+      "twenty-four hours",
+      "the night of february fourth"
+  ],
+  "six": [
+      "six o’clock",
+      "six in the afternoon",
+      "six hours",
+      "six"
+  ],
+  "eleven": [
+      "eleven o’clock",
+      "eleven o’clock in",
+      "past eleven o’clock"
+  ],
+  "three": [
+      "three in the afternoon",
+      "three in the morning",
+      "more than three hours",
+      "the three minutes",
+      "three o’clock in",
+      "three o’clock"
+  ],
+  "eight": [
+      "eight in the morning",
+      "forty-eight hours",
+      "eight o’clock"
+  ],
+  "five": [
+      "five in the morning",
+      "five o’clock in",
+      "five minutes",
+      "five o’clock",
+      "five-o’clock"
+  ],
+  "seven": [
+      "seven in the morning",
+      "seven in the evening",
+      "seven o’clock"
+  ],
+  "ten": [
+      "ten o’clock"
+  ],
+  "twelve": [
+      "twelve-o’clock",
+      "twelve o’clock"
+  ]
+}

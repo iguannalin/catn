@@ -16,6 +16,7 @@ let prepositions = [];
 fetch("https://raw.githubusercontent.com/dariusk/corpora/master/data/words/prepositions.json").then((tt) => tt.json()).then((rr) => prepositions = rr.prepositions);
 
 window.addEventListener("load", () => {
+  console.log(times);
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
