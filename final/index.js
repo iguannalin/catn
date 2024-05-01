@@ -10,8 +10,8 @@ let locations = []
 fetch("https://iguannalin.github.io/catn/final/dictionary/locations.txt").then((tt) => tt.text()).then((rr) => locations = rr.split("\n"));
 let people = []
 fetch("https://iguannalin.github.io/catn/final/dictionary/people.txt").then((tt) => tt.text()).then((rr) => people = rr.split("\n"));
-let times = []
-fetch("https://iguannalin.github.io/catn/final/dictionary/times.txt").then((tt) => tt.text()).then((rr) => times = rr.split("\n"));
+let times = {};
+fetch("https://iguannalin.github.io/catn/final/dictionary/hours.json").then((tt) => tt.text()).then((rr) => times = rr);
 let prepositions = [];
 fetch("https://raw.githubusercontent.com/dariusk/corpora/master/data/words/prepositions.json").then((tt) => tt.json()).then((rr) => prepositions = rr.prepositions);
 
