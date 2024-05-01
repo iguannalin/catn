@@ -39,7 +39,6 @@ window.addEventListener("load", () => {
     sentence += ", ";
     sentence += person;
     if (Math.random() > 0.1) {
-      console.log("true")
       sentence += " ";
       sentence += advs[getRandomInt(0,advs.length)];
       sentence += " ";
@@ -83,6 +82,7 @@ window.addEventListener("load", () => {
   }
 
   function makeA(sentence, index = 0) {
+    console.log(index)
     const button = document.createElement("button");
     button.innerHTML = sentence;
     // button.href = ".";
@@ -90,8 +90,11 @@ window.addEventListener("load", () => {
     container.appendChild(button);
   }
 
-  for (let i = 0; i < 12; i++) {
-    makeA(writeSentence(i), i);
+  for (let i = 1; i < 13; i++) {
+    if (i == 12)
+      makeA(writeSentence(0), 0);
+    else 
+      makeA(writeSentence(i), i);
   }
 
 });
