@@ -28,13 +28,24 @@ body {
   width: 60ch;
 }
 
-a {
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  text-decoration: underline;
+}
+
+button, a {
   color: #673ab7;
   display: block;
   margin: 12px 16px;
   text-shadow: #090a14 -2px 2px 8px;
 }
 
-a:hover {
+button:hover, a:hover {
   color: #ffeb3b;
 }
