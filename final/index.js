@@ -86,7 +86,19 @@ window.addEventListener("load", () => {
     const button = document.createElement("button");
     button.innerHTML = sentence;
     // button.href = ".";
+    button.onclick = () => {window.location.reload()};
     container.appendChild(button);
+  }
+
+  function openPopup() {
+    const text = `<!DOCTYPE html><html> <head> <title>marquez</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://iguannalin.github.io/catn/final/index.css"/>
+    <script src="https://iguannalin.github.io/catn/final/index.js"></script>
+    </body></html>`;
+    const blob = new Blob([text], {type: "text/html"});
+    const blobUrl = URL.createObjectURL(blob);
+    window.open(blobUrl, '_blank', `popup,location,status,scrollbars,resizable,width=100,height=100,top=${y},left=${x}`);
+    window.URL.revokeObjectURL(blobUrl);
   }
 
   for (let i = 0; i < getRandomInt(1,1); i++) {
