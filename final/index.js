@@ -1,17 +1,17 @@
 let advs = []
-fetch("dictionary/advs.txt").then((tt) => tt.text()).then((rr) => advs = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/advs.txt").then((tt) => tt.text()).then((rr) => advs = rr.split("\n"));
 let adjs = []
-fetch("dictionary/adjs.txt").then((tt) => tt.text()).then((rr) => adjs = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/adjs.txt").then((tt) => tt.text()).then((rr) => adjs = rr.split("\n"));
 let verbs = []
-fetch("dictionary/verbs.txt").then((tt) => tt.text()).then((rr) => verbs = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/verbs.txt").then((tt) => tt.text()).then((rr) => verbs = rr.split("\n"));
 let nouns = []
-fetch("dictionary/nouns.txt").then((tt) => tt.text()).then((rr) => nouns = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/nouns.txt").then((tt) => tt.text()).then((rr) => nouns = rr.split("\n"));
 let locations = []
-fetch("dictionary/locations.txt").then((tt) => tt.text()).then((rr) => locations = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/locations.txt").then((tt) => tt.text()).then((rr) => locations = rr.split("\n"));
 let people = []
-fetch("dictionary/people.txt").then((tt) => tt.text()).then((rr) => people = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/people.txt").then((tt) => tt.text()).then((rr) => people = rr.split("\n"));
 let times = []
-fetch("dictionary/times.txt").then((tt) => tt.text()).then((rr) => times = rr.split("\n"));
+fetch("https://iguannalin.github.io/catn/final/dictionary/times.txt").then((tt) => tt.text()).then((rr) => times = rr.split("\n"));
 let prepositions = [];
 fetch("https://raw.githubusercontent.com/dariusk/corpora/master/data/words/prepositions.json").then((tt) => tt.json()).then((rr) => prepositions = rr.prepositions);
 
@@ -30,6 +30,7 @@ window.addEventListener("load", () => {
   let person = people[getRandomInt(0,people.length)];
   let location = locations[getRandomInt(0,locations.length)];
   let preposition = prepositions[getRandomInt(0,prepositions.length)];
+
   function writeSentence() {
     let sentence = "";
 
