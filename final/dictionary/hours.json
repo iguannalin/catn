@@ -24,27 +24,6 @@
       "more than two hours",
       "two o’clock"
   ],
-  "nine": [
-      "nine nights",
-      "nine in the evening"
-  ],
-  "four": [
-      "four in the afternoon",
-      "four",
-      "twenty-four hours",
-      "the night of february fourth"
-  ],
-  "six": [
-      "six o’clock",
-      "six in the afternoon",
-      "six hours",
-      "six"
-  ],
-  "eleven": [
-      "eleven o’clock",
-      "eleven o’clock in",
-      "past eleven o’clock"
-  ],
   "three": [
       "three in the afternoon",
       "three in the morning",
@@ -53,26 +32,50 @@
       "three o’clock in",
       "three o’clock"
   ],
+  
+  "four": [
+      "four in the afternoon",
+      "four",
+      "twenty-four hours",
+      "the night of february fourth"
+  ],
+  "five": [
+    "five in the morning",
+    "five o’clock in",
+    "five minutes",
+    "five o’clock",
+    "five-o’clock"
+],
+  "six": [
+      "six o’clock",
+      "six in the afternoon",
+      "six hours",
+      "six"
+  ],
+ 
+  "seven": [
+    "seven in the morning",
+    "seven in the evening",
+    "seven o’clock"
+],
   "eight": [
       "eight in the morning",
       "forty-eight hours",
       "eight o’clock"
-  ],
-  "five": [
-      "five in the morning",
-      "five o’clock in",
-      "five minutes",
-      "five o’clock",
-      "five-o’clock"
-  ],
-  "seven": [
-      "seven in the morning",
-      "seven in the evening",
-      "seven o’clock"
-  ],
+  ],"nine": [
+    "nine nights",
+    "nine in the evening"
+],
+
+ 
   "ten": [
       "ten o’clock"
   ],
+  "eleven": [
+    "eleven o’clock",
+    "eleven o’clock in",
+    "past eleven o’clock"
+],
   "twelve": [
       "twelve-o’clock",
       "twelve o’clock"
