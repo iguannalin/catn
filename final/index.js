@@ -12,6 +12,8 @@ let people = []
 fetch("dictionary/people.txt").then((tt) => tt.text()).then((rr) => people = rr.split("\n"));
 let times = []
 fetch("dictionary/times.txt").then((tt) => tt.text()).then((rr) => times = rr.split("\n"));
+let prepositions = [];
+fetch("https://raw.githubusercontent.com/dariusk/corpora/master/data/words/prepositions.json").then((tt) => tt.json()).then((rr) => prepositions = rr.prepositions);
 
 window.addEventListener("load", () => {
   function getRandomInt(min, max) {
@@ -27,39 +29,47 @@ window.addEventListener("load", () => {
   // discover ice
   function writeSentence() {
     let sentence = "";
-    if (Math.random() > 0.2) {
-      sentence += locations[getRandomInt(0,locations.length)];
-      sentence += " is ";
-      sentence += adjs[getRandomInt(0,adjs.length)];
-      sentence += ", like the ";
-      sentence += nouns[getRandomInt(0,nouns.length)];
-      sentence += ". ";
-    }
-    else if (Math.random() > 0.5) {
-      sentence += times[getRandomInt(0,times.length)];
-      sentence += " as ";
-      sentence += people[getRandomInt(0,people.length)];
-      sentence += " ";
-      sentence += advs[getRandomInt(0,advs.length)];
-      sentence += " ";
-      sentence += verbs[getRandomInt(0,verbs.length)];
-      sentence += " the ";
-      sentence += nouns[getRandomInt(0,nouns.length)];
-      sentence += ", ";
-    }
-    sentence += people[getRandomInt(0,people.length)];
-    sentence += " ";
-    sentence += verbs[getRandomInt(0,verbs.length)];
-    sentence += " that ";
+    let person = people[getRandomInt(0,people.length)];
+    let location = locations[getRandomInt(0,locations.length)];
+    let preposition = prepositions[getRandomInt(0,prepositions.length)];
+
     sentence += times[getRandomInt(0,times.length)];
-    sentence += " when ";
-    sentence += people[getRandomInt(0,people.length)];
-    sentence += " ";
-    sentence += verbs[getRandomInt(0,verbs.length)];
-    sentence += " to ";
-    sentence += verbs[getRandomInt(0,verbs.length)];
-    sentence += " ";
-    sentence += nouns[getRandomInt(0,nouns.length)];
+    sentence += ", ";
+    sentence += person;
+
+    // if (Math.random() > 0.2) {
+    //   sentence += locations[getRandomInt(0,locations.length)];
+    //   sentence += " is ";
+    //   sentence += adjs[getRandomInt(0,adjs.length)];
+    //   sentence += ", like the ";
+    //   sentence += nouns[getRandomInt(0,nouns.length)];
+    //   sentence += ". ";
+    // }
+    // else if (Math.random() > 0.5) {
+    //   sentence += times[getRandomInt(0,times.length)];
+    //   sentence += " as ";
+    //   sentence += people[getRandomInt(0,people.length)];
+    //   sentence += " ";
+    //   sentence += advs[getRandomInt(0,advs.length)];
+    //   sentence += " ";
+    //   sentence += verbs[getRandomInt(0,verbs.length)];
+    //   sentence += " the ";
+    //   sentence += nouns[getRandomInt(0,nouns.length)];
+    //   sentence += ", ";
+    // }
+    // sentence += people[getRandomInt(0,people.length)];
+    // sentence += " ";
+    // sentence += verbs[getRandomInt(0,verbs.length)];
+    // sentence += " that ";
+    // sentence += times[getRandomInt(0,times.length)];
+    // sentence += " when ";
+    // sentence += people[getRandomInt(0,people.length)];
+    // sentence += " ";
+    // sentence += verbs[getRandomInt(0,verbs.length)];
+    // sentence += " to ";
+    // sentence += verbs[getRandomInt(0,verbs.length)];
+    // sentence += " ";
+    // sentence += nouns[getRandomInt(0,nouns.length)];
     return sentence;
   }
 
